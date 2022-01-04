@@ -1,0 +1,145 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "userName": "robfenger",
+      "password": "ge2d35e5",
+      "id": 3
+    },
+    {
+      "userName": "paula",
+      "password": "fenger",
+      "id": 4
+    },
+    {
+      "userName": "norbert",
+      "password": "fenger",
+      "id": 5
+    },
+    {
+      "userName": "jantje",
+      "password": "vandervaart",
+      "id": 6
+    },
+    {
+      "userName": "jantje",
+      "password": "vandervaart",
+      "id": 7
+    },
+    {
+      "userName": "piet",
+      "password": "vandepetteflet",
+      "id": 8
+    },
+    {
+      "userName": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "userName": "robbiedevoetballer",
+      "password": "lampard",
+      "id": 10
+    },
+    {
+      "userName": "r_()",
+      "password": "wtf",
+      "id": 11
+    },
+    {
+      "userName": "robbadoes",
+      "password": "5Vijfhoek",
+      "id": 12
+    },
+    {
+      "userName": "6characters",
+      "password": "6black",
+      "id": 13
+    },
+    {
+      "userName": "helloworld",
+      "password": "codecademy",
+      "id": 14
+    },
+    {
+      "userName": "robfenger36",
+      "password": "6vijfhoek",
+      "id": 15
+    },
+    {
+      "userName": "dfkdjdsfadsfdasf",
+      "password": "afdsaf",
+      "id": 16
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "userName": "jantje",
+      "comment": "Jantje in da house...",
+      "plus": "1",
+      "min": "0",
+      "robfenger": "plus",
+      "id": 4
+    },
+    {
+      "userName": "norbert",
+      "comment": "Ik heb altijd gelijk!",
+      "plus": "2",
+      "min": "0",
+      "jantje": "plus",
+      "id": 5
+    },
+    {
+      "userName": "jantje",
+      "comment": "testcomment",
+      "plus": "0",
+      "min": "1",
+      "robfenger": "min",
+      "id": 7
+    },
+    {
+      "userName": "jantje",
+      "comment": "jojo",
+      "plus": "1",
+      "min": "0",
+      "robfenger": "plus",
+      "id": 8
+    },
+    {
+      "userName": "robfenger",
+      "comment": "make comment",
+      "plus": "0",
+      "min": "1",
+      "jantje": "min",
+      "id": 10
+    },
+    {
+      "userName": "robfenger",
+      "comment": "just a bunch of comments to make",
+      "plus": "1",
+      "min": "0",
+      "jantje": "plus",
+      "id": 11
+    },
+    {
+      "userName": "robfenger",
+      "comment": "test 1.2....",
+      "plus": "0",
+      "min": "1",
+      "jantje": "min",
+      "id": 12
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

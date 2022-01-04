@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <title>System</title>
+    </head>
+    <body>
+      
+      <div class="navbar">
+        <div class="flex-bar">
+          <h1 class="site-name">Login and Comment - System</h1>
+          <div class="right-menu">
+            <h3 class="user"></h3>
+            <h3 class="login-icon">Log in</h3>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-menu">
+        <h4 class="logout">Log out</h4>
+        <h4 class="unsubscribe">Unsubscribe</h4>
+        <h4 class="change-password">Change Password</h4>
+      </div>
+
+      <div class="logout-menu">
+        <p>Are you sure you want to logout?</p>
+        <button class="logout-btn" id="logout-yes">Yes</button>
+        <button class="logout-btn" id="logout-no">No, go back!</button>
+      </div>
+
+      <div class="logged-out">
+        <p>You are now logged out</p>
+        <button class="logout-btn" id="logout-ok">OK</button> 
+      </div>
+
+      <div class="unsub-form">
+        <div class="login">
+
+          <h4>Unsubscribe</h4>
+
+          <p>Username</p>
+          <input type="text" placeholder="username" class="username" id="old-username"> 
+          
+          <p>Password</p>
+          <input type="password" placeholder="password" class="password" id="old-password">
+          <input type="checkbox" id="unsub-password">Show Password
+
+          <button type="button" class="login-button" id="unsub-button">unsubscribe</button>
+        </div>
+
+        <div class="unsub-menu">
+          <p>Are you sure you want to delete your account?</p>
+          <button class="logout-btn" id="unsub-yes">Yes</button>
+          <button class="logout-btn" id="unsub-no">No, go back!</button>
+        </div>
+  
+        <div class="unsubbed">
+          <p>You are now unsubscribed</p>
+          <button class="logout-btn" id="unsub-ok">OK</button> 
+        </div>
+
+        <div class="unsub-data"></div>
+      </div>
+
+      <div class="login-form">
+        <div class="login">
+
+          <h4>Log in</h4>
+
+          <p>Username</p>
+          <input type="text" placeholder="username" class="username" id="username"> 
+          
+          <p>Password</p>
+          <input type="password" placeholder="password" class="password" id="password">
+          <input type="checkbox" id="login-password">Show Password
+          <div class="stay-login"><input type="checkbox" id="stay-login">Stay logged in</div>
+
+          <button type="button" class="login-button" id="login-button">log in</button>
+        </div>
+
+        <p class="not-sub">Not subscribed yet?    </p><p class="subscribe" id="subscribe">click here to subscribe</p>
+        <div class="data"></div>
+
+      </div>
+
+      <div class="subscribe-form">
+        <div class="login">
+
+          <h4>Subscribe</h4>
+
+          <p>Username</p>
+          <input type="text" placeholder="username" class="username" id="new-username">
+          
+          <p>Password</p>
+          <input type="password" placeholder="password" class="password" id="new-password">
+          <input type="checkbox" id="subscribe-password">Show Password
+
+          <button type="button" class="login-button" id="subscribe-button">subscribe</button>
+        </div>
+
+        <p class="not-sub">Already subscribed?    </p><p class="subscribe" id="login">click here to log in</p>
+        <div class="sub-data"></div>
+      </div>
+
+      <div class="change-form">
+        <div class="login">
+
+          <h4>Change Password</h4>
+
+          <p>Username</p>
+          <input type="text" placeholder="username" class="username" id="change-username"> 
+          
+          <p>Password</p>
+          <input type="password" placeholder="password" class="password" id="change-password">
+          <input type="checkbox" id="change-password-check">Show Password
+
+          <p>New Password</p>
+          <input type="password" placeholder="new password" class="password" id="change-new-password">
+          <input type="checkbox" id="change-new-password-check">Show Password
+
+          <button type="button" class="login-button" id="change-button">change password</button>
+        </div>
+
+        <div class="change-menu">
+          <p>Are you sure you want to change your password?</p>
+          <button class="logout-btn" id="change-yes">Yes</button>
+          <button class="logout-btn" id="change-no">No, go back!</button>
+        </div>
+  
+        <div class="changed">
+          <p>Your password is now changed</p>
+          <button class="logout-btn" id="change-ok">OK</button> 
+        </div>
+
+        <div class="change-data"></div>
+      </div>
+
+
+      <div class="comments-section">
+        <h2>Comments-section</h2>
+
+        <div class="subcomments-section">
+          <h3 class="comments-user"></h3>
+          <textarea class="text-field" id="text-field" cols="30" rows="10" placeholder="Comment here........"></textarea>
+          <button class="comment-submit" id="comment-submit">Submit Comment</button>
+          <p class="comments-data"></p>
+        </div>
+
+        
+        <div class="comments" id="comments"></div>
+      </div>
+
+      <div class="delete-comment-menu">
+        <p>Are you sure you want to delete your comment?</p>
+        <button class="logout-btn" id="delete-comment-yes">Yes</button>
+        <button class="logout-btn" id="delete-comment-no">No, go back!</button>
+      </div>
+
+      <div class="comment-deleted">
+        <p>Your comment is now deleted</p>
+        <button class="logout-btn" id="comment-deleted-ok">OK</button> 
+      </div>
+
+    <div id="testing">.</div>
+
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <script src="system.js"></script>
+    </body>
+</html>
