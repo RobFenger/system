@@ -182,7 +182,7 @@ $(document).ready(() => {
              $('.sub-data').html("password only accepts letters and numbers and must be at least 6 characters");
          } else {
              //url of the server
-             const url = "http://robfenger.github.io/db.json/posts";
+             const url = "https://robfenger.github.io/db.json/posts";
  
              // check if username already exists in the server-array
              $.getJSON(url, function(data) {
@@ -257,7 +257,7 @@ $(document).ready(() => {
                 $('.data').html("password only accepts letters and numbers and must be at least 6 characters");
             } else {
                 //url of the server
-                const url = "http://robfenger.github.io/db.json/posts";
+                const url = "https://robfenger.github.io/db.json/posts";
 
                 //get data from the server
                 $.getJSON(url, function(data) {
@@ -385,7 +385,7 @@ $(document).ready(() => {
         } else {
 
             //url of the server
-            const url = "http://robfenger.github.io/db.json/posts";
+            const url = "https://robfenger.github.io/db.json/posts";
            
             //get data from the server
             $.get(url, function(data) {
@@ -420,7 +420,7 @@ $(document).ready(() => {
         $('.unsub-menu').hide();
 
         //url of the server
-        const url = "http://robfenger.github.io/db.json/posts";
+        const url = "https://robfenger.github.io/db.json/posts";
 
         //get value of the input value for message
         const userName = $('#old-username').val();
@@ -509,7 +509,7 @@ $(document).ready(() => {
             $('.change-data').html('Incorrect username. You can only change password of the account with which you are logged in at the moment.');
         } else {
             //url of the server
-            const url = "http://robfenger.github.io/db.json/posts";
+            const url = "https://robfenger.github.io/db.json/posts";
            
             //get data from the server
             $.get(url, function(data) {
@@ -555,7 +555,7 @@ $(document).ready(() => {
         $('.change-menu').hide();
 
         //url of the server
-        const url = "http://robfenger.github.io/db.json/posts";
+        const url = "https://robfenger.github.io/db.json/posts";
 
         //put-request to change the password in the server
         $.ajax({
@@ -633,7 +633,7 @@ $(document).ready(() => {
     const sendComment = () => {
         const comment = $('#text-field').val();
         
-        const url = "http://robfenger.github.io/db.json/comments";
+        const url = "https://robfenger.github.io/db.json/comments";
 
         const commentInfo = {
             userName: user,
@@ -653,7 +653,7 @@ $(document).ready(() => {
 
         $('.comment-container').remove();
 
-        const url = "http://robfenger.github.io/db.json/comments";
+        const url = "https://robfenger.github.io/db.json/comments";
 
         //for every comment in the server make new elements (same as in the .post request)
         $.getJSON(url, function(data) {
@@ -1141,7 +1141,7 @@ $(document).ready(() => {
                 //press change button. change comment
                 $('#button-' + idOptions).on('click', () => {
                     $('#button-' + idOptions).hide();
-                    const url = "http://robfenger.github.io/db.json/comments/" + idOptions;
+                    const url = "https://robfenger.github.io/db.json/comments/" + idOptions;
 
                     const newComment = $('#text-field-' + idOptions).val();
 
@@ -1176,7 +1176,7 @@ $(document).ready(() => {
                     let idOptions = id.split('-')[2];
 
                     let reactionComment = $('#react-textfield-' + idOptions).val();
-                    const url = "http://robfenger.github.io/db.json/comments";
+                    const url = "https://robfenger.github.io/db.json/comments";
 
                     let objectToSend = {
                         comment: reactionComment,
@@ -1198,7 +1198,7 @@ $(document).ready(() => {
                 let id = $(event.currentTarget).attr('id');
                 let idOptions = id.split('-')[2];
 
-                const url = "http://robfenger.github.io/db.json/comments";
+                const url = "https://robfenger.github.io/db.json/comments";
 
                 $.getJSON(url, function (data) {
                     for (let i = 1; i < data.length; i++) {
@@ -1230,7 +1230,7 @@ $(document).ready(() => {
 
     //function to delete specific comment 
     const deleteComment = (idToDelete) => {
-        const url = "http://robfenger.github.io/db.json/comments";
+        const url = "https://robfenger.github.io/db.json/comments";
 
         $.ajax({
             url: url + '/' + idToDelete,
